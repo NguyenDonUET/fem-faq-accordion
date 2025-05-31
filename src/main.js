@@ -1,4 +1,4 @@
-const toggleButtons = document.querySelectorAll("#toggleButton")
+const toggleButtons = document.querySelectorAll(".toggleButton")
 
 toggleButtons.forEach((button) => {
   button.addEventListener("click", () => {

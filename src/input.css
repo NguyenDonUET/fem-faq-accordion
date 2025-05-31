@@ -1,1 +1,33 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-white: hsl(0, 100%, 100%);
+  --color-purple-100: hsl(275, 100%, 97%);
+  --color-purple-600: hsl(292, 16%, 49%);
+  --color-purple-950: hsl(292, 42%, 14%);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.accordion {
+  @apply py-6 md:py-8 not-last:border-b border-purple-100;
+}
+
+.expanded {
+  @apply max-h-screen pt-4 transition-[max-height] duration-500 ease-in-out;
+}
